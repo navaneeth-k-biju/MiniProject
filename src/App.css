@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+.mainPage{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+.App-header {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.root{
+  width: 100%;
+  height: 100vh;
+}

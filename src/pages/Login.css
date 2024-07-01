@@ -1,0 +1,60 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/src/assets/img/Ration-Card-in-Hindi--800x500.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Head{
+    background: #007b00;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+}
+.fade{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+}
+
+.fade-exit {
+    opacity: 1;
+    
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+.signup-content {
+    opacity: 0;
+    transform: translateY(20px); /* Initial transform for signup content (optional) */
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out; /* Adjust duration and easing as needed */
+}
+
+.signup-content.active {
+    opacity: 1;
+    transform: translateY(0); /* Final transform for signup content */
+}
+
+.radio-content {
+    opacity: 1; /* Ensure radio content is always visible */
+    transition: opacity 300ms ease-in-out; /* Adjust duration and easing as needed */
+}
+
+.radio-content.inactive {
+    opacity: 0; /* Hide radio content on signup */
+}
